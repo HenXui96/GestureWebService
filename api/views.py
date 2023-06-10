@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import ImageModel
-from .serializers import ImageModelSerializer
 
 # Create your views here.
 from GestureLearner import *
