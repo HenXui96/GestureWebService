@@ -17,10 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from api.views import ImageModelAPIView, make_predict
+from api.views import make_predict
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('image/', ImageModelAPIView.as_view(), name='image-view'),
     path('predict/', make_predict, name='predict-view'),
 ]
